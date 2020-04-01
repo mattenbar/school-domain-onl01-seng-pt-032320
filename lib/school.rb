@@ -23,6 +23,7 @@ attr_reader :roster, :add_student, :grade, :sort
   end
 
   def sort
+    #iterates through the hash and destructively sorts
     roster.map do |grade, students|
       students.sort!
     end
