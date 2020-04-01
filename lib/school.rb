@@ -18,7 +18,7 @@ attr_reader :roster, :add_student, :grade, :sort
   end
 
   def sort
-    roster.sort
+    roster
   end
 
 end
