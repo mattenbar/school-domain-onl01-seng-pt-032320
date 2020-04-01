@@ -9,7 +9,7 @@ attr_reader :roster, :add_student
   end
 
   def add_student(name, grade)
-    @roster[grade].each do |students|
+    roster[grade].each do |students|
       students << name
     end
 
