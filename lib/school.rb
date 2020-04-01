@@ -8,9 +8,9 @@ attr_reader :roster, :add_student, :grade, :sort
     @roster = {}
   end
 
-  def add_student(name, grade)
+  def add_student(student, grade)
     roster[grade] ||= []
-    roster[grade] << name
+    roster[grade] << student
   end
 
   def grade(grade)
@@ -18,7 +18,9 @@ attr_reader :roster, :add_student, :grade, :sort
   end
 
   def sort
-    roster.sort
+    roster.map do |grade, students|
+      grade.sort
+      students.sort
   end
 
 end
