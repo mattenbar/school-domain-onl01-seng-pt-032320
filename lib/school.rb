@@ -9,8 +9,7 @@ attr_reader :roster, :add_student
   end
 
   def add_student(name, grade)
-    roster.each do |grade, name|
-      grade << name
+    roster[grade] << [name]
   end
 
 
