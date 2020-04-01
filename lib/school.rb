@@ -11,6 +11,7 @@ attr_reader :roster, :add_student
   def add_student(name, grade)
     @roster[grade] do |name|
       students << name
+    end
 
   end
 
