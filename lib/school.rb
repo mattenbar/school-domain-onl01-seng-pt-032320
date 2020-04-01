@@ -2,7 +2,7 @@
 class School
 
 attr_accessor
-attr_reader :roster, :add_student :grade
+attr_reader :roster, :add_student, :grade
 
   def initialize(roster)
     @roster = {}
