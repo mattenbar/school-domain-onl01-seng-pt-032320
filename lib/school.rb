@@ -19,8 +19,8 @@ attr_reader :roster, :add_student, :grade, :sort
 
   def sort
     roster.map do |grade, students|
-      students.sort
-    end 
+      students.sort!
+    end
   end
 
 end
