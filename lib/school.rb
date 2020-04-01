@@ -9,7 +9,7 @@ attr_reader :roster, :add_student
   end
 
   def add_student(name, grade)
-    @roster[grade] = [name]
+    roster[grade] = [name]
   end
 
 
